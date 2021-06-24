@@ -1,0 +1,15 @@
+{
+  "name": "dj-events",
+  "version": "1.0.0",
+  "description": "Event web application using nextjs and strapi backend",
+  "scripts": {
+    "server": "nodemon backend/server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sanjula De Alwis",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
