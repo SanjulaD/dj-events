@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Event web application using nextjs and strapi backend",
   "scripts": {
-    "server": "nodemon backend/server",
+    "server": "npm run develop --prefix server",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },

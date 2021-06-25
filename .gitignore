@@ -1,7 +1,27 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 node_modules/
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+
+ssl
+.idea
+nbproject
+server/public/uploads/*
+server/!public/uploads/.gitkeep
+
 # dependencies
+server/node_modules
 client/node_modules
 client/.pnp
 .pnp.js
@@ -25,6 +45,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.env
+license.txt
+exports
+*.cache
+build
+.strapi-updater.json
 # local env files
 .env.local
 .env.development.local
