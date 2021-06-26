@@ -1,16 +1,22 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '@/styles/EventItem.module.css'
 
 const AllEventList = ({ event }) => {
     return (
         <div className={styles.event}>
             <div className={styles.img}>
-                <img
-                    src={event.image.name}
-                    width={170}
-                    height={100}
-                />
+                {
+                    event.image ? (<img
+                        src={event.image.name}
+                        width={170}
+                        height={100} />
+                    ) : (
+                        <img
+                            src='images/default-event.png'
+                            width={170}
+                            height={100} />
+                    )
+                }
             </div>
 
             <div className={styles.info}>
